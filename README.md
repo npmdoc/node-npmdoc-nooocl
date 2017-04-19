@@ -1,4 +1,7 @@
-# api documentation for  [nooocl (v0.12.5)](https://github.com/unbornchikken/nooocl)  [![npm package](https://img.shields.io/npm/v/npmdoc-nooocl.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nooocl) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nooocl.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nooocl)
+# npmdoc-nooocl
+
+#### api documentation for  [nooocl (v0.12.5)](https://github.com/unbornchikken/nooocl)  [![npm package](https://img.shields.io/npm/v/npmdoc-nooocl.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nooocl) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nooocl.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nooocl)
+
 #### NOOOCL: Node.js Object Oriented OpenCL Bindings
 
 [![NPM](https://nodei.co/npm/nooocl.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/nooocl)
