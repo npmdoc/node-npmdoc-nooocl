@@ -341,6 +341,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">nooocl.</span>index</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">nooocl.</span>types</span>
 
         </li>
@@ -1601,6 +1607,145 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.nooocl.index">module nooocl.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLBuffer">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLBuffer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLCommandQueue">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLCommandQueue
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLContext">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLContext
+            <span class="apidocSignatureSpan">(arg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLDevice">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLDevice
+            <span class="apidocSignatureSpan">(cl, handle, platform)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLError">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLError
+            <span class="apidocSignatureSpan">(code, message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLHost">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLHost
+            <span class="apidocSignatureSpan">(version)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLImage2D">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLImage2D
+            <span class="apidocSignatureSpan">(context, flags, format, width, height, hostPtr, rowPitch)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLImage3D">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLImage3D
+            <span class="apidocSignatureSpan">(context, flags, format, width, height, depth, hostPtr, rowPitch, slicePitch)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLKernel">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLKernel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLPlatform">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLPlatform
+            <span class="apidocSignatureSpan">(cl, handle)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLProgram">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLProgram
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLSampler">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLSampler
+            <span class="apidocSignatureSpan">(context, normalizedCoords, addressingMode, filterMode)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.CLUserEvent">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>CLUserEvent
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.NDRange">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>NDRange
+            <span class="apidocSignatureSpan">(xSize, ySize, zSize)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nooocl.index.scope">
+            function <span class="apidocSignatureSpan">nooocl.index.</span>scope
+            <span class="apidocSignatureSpan">(body)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.nooocl.scope">module nooocl.scope</a><ol>
 
         <li>
@@ -2829,6 +2974,8 @@ err);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
 
 
 
@@ -6345,6 +6492,376 @@ createPropArray: function (cl, properties, platform) {
         return ptr.buffer;
     }
     throw new TypeError("Pointer '" + (name || "ptr") + "' is not a buffer.");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.nooocl.index" id="apidoc.module.nooocl.index">module nooocl.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLBuffer" id="apidoc.element.nooocl.index.CLBuffer">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLBuffer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLBuffer() {
+    if (arguments.length === 2) {
+        CLBuffer2.apply(this, arguments);
+    }
+    else {
+        CLBuffer1.apply(this, arguments);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLCommandQueue" id="apidoc.element.nooocl.index.CLCommandQueue">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLCommandQueue
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLCommandQueue() {
+    if (arguments.length &gt;= 2 &amp;&amp; arguments[0] instanceof CLContext &amp;&amp; arguments[1] instanceof CLDevice) {
+        CLCommandQueue2.apply(this, arguments);
+    }
+    else {
+        CLCommandQueue1.apply(this, arguments);
+    }
+    this.isWaitable = false;
+    this._notWaitableVersion = this;
+    this._waitableVersion = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLContext" id="apidoc.element.nooocl.index.CLContext">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLContext
+        <span class="apidocSignatureSpan">(arg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLContext(arg) {
+    if (arg instanceof CLPlatform) {
+        CLContext2.apply(this, arguments);
+    }
+    else {
+        CLContext1.apply(this, arguments);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLDevice" id="apidoc.element.nooocl.index.CLDevice">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLDevice
+        <span class="apidocSignatureSpan">(cl, handle, platform)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLDevice(cl, handle, platform) {
+    CLWrapper.call(this, cl, handle, createReleaseFunction(cl, handle));
+    this._platform = platform;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLError" id="apidoc.element.nooocl.index.CLError">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLError
+        <span class="apidocSignatureSpan">(code, message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLError(code, message) {
+    Error.call(this);
+    Error.captureStackTrace(this, CLError);
+    var typeKey = _.first(_.filter(_.keys(defs), function (defKey) {
+        return defs[defKey] === code;
+    }));
+    var type = typeKey || "UNKNOWN";
+    this.name = "CLError";
+    this.message = "OpenCL Error Code: " + code + " Type: " + type;
+    if (message) {
+        this.message += " Message: " + message;
+    }
+    this.code = code;
+    this._type = type;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLHost" id="apidoc.element.nooocl.index.CLHost">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLHost
+        <span class="apidocSignatureSpan">(version)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLHost(version) {
+    assert(_.includes(_.values(CLHost.supportedVersions), version), "Argument 'version' is invalid or not supported.");
+
+    // ## version
+    // version of the OpenCL runtime, can be number value of 1.1 or 1.2.
+    this.version = version;
+
+    // ## cl
+    // instance of the [CL11](cl11.html) or [CL12](cl12.html) class, depending the version of the OpenCL runtime.
+    this.cl = null;
+    if (version === CLHost.supportedVersions.cl11) {
+        this.cl = new CL11();
+    }
+    else if (version === CLHost.supportedVersions.cl12) {
+        this.cl = new CL12();
+    }
+    else {
+        throw new Error("Unknown version: " + version);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLImage2D" id="apidoc.element.nooocl.index.CLImage2D">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLImage2D
+        <span class="apidocSignatureSpan">(context, flags, format, width, height, hostPtr, rowPitch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLImage2D(context, flags, format, width, height, hostPtr, rowPitch) {
+    format = clUtils.asImageFormat(format);
+    hostPtr = hostPtr || null;
+    rowPitch = rowPitch || 0;
+    var cl = context.cl;
+
+    var err = clPredef.err;
+    var handle = cl.imports.clCreateImage2D(clUtils.toHandle(context, "context"), flags, format.ref(), width, height, rowPitch,
+clUtils.toPtr(hostPtr, "hostPtr"), err);
+    cl.checkError(err);
+
+    CLImage.call(this, context, handle);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLImage3D" id="apidoc.element.nooocl.index.CLImage3D">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLImage3D
+        <span class="apidocSignatureSpan">(context, flags, format, width, height, depth, hostPtr, rowPitch, slicePitch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLImage3D(context, flags, format, width, height, depth, hostPtr, rowPitch, slicePitch) {
+    format = clUtils.asImageFormat(format);
+    hostPtr = hostPtr || null;
+    rowPitch = rowPitch || 0;
+    slicePitch = slicePitch || 0;
+    var cl = context.cl;
+
+    var err = clPredef.err;
+    var handle = cl.imports.clCreateImage3D(clUtils.toHandle(context, "context"), flags, format.ref(), width, height, depth, rowPitch
+, slicePitch, clUtils.toPtr(hostPtr, "hostPtr"), err);
+    cl.checkError(err);
+
+    CLImage.call(this, context, handle);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLKernel" id="apidoc.element.nooocl.index.CLKernel">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLKernel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLKernel() {
+    if (_.isString(arguments[1])) {
+        CLKernel1.apply(this, arguments);
+    }
+    else {
+        CLKernel2.apply(this, arguments);
+    }
+    this._args = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLPlatform" id="apidoc.element.nooocl.index.CLPlatform">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLPlatform
+        <span class="apidocSignatureSpan">(cl, handle)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLPlatform(cl, handle) {
+    CLWrapper.call(this, cl, handle, null);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLProgram" id="apidoc.element.nooocl.index.CLProgram">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLProgram
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLProgram() {
+    if (!(arguments[0] instanceof CLContext)) {
+        throw new TypeError("First argument must be a CLContext instance.");
+    }
+    if (_.isString(arguments[1])) {
+        CLProgram1.apply(this, arguments);
+    }
+    else {
+        CLProgram2.apply(this, arguments);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLSampler" id="apidoc.element.nooocl.index.CLSampler">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLSampler
+        <span class="apidocSignatureSpan">(context, normalizedCoords, addressingMode, filterMode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLSampler(context, normalizedCoords, addressingMode, filterMode) {
+    var cl = context.cl;
+    var err = ref.alloc(cl.types.ErrorCode);
+    var handle = cl.imports.clCreateSampler(clUtils.toHandle(context, "context"), normalizedCoords, addressingMode, filterMode,
+err);
+    cl.checkError(err);
+    CLWrapper.call(this, cl, handle, createReleaseFunction(cl, handle));
+    this.context = context;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.CLUserEvent" id="apidoc.element.nooocl.index.CLUserEvent">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>CLUserEvent
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLUserEvent(context) {
+    var cl = context.cl;
+    var err = ref.alloc(cl.types.ErrorCode);
+    var handle = cl.imports.clCreateUserEvent(clUtils.toHandle(context), err);
+    cl.checkError(err);
+    CLEvent.call(this, cl, handle);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.NDRange" id="apidoc.element.nooocl.index.NDRange">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>NDRange
+        <span class="apidocSignatureSpan">(xSize, ySize, zSize)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NDRange(xSize, ySize, zSize) {
+    if (_.isNumber(xSize)) {
+        ySize = _.isNumber(ySize) ? ySize : 0;
+        zSize = _.isNumber(zSize) ? zSize : 0;
+
+        this.sizes = new (types.SizeTArray)(3);
+        this.sizes.set(0, xSize);
+        this.sizes.set(1, ySize);
+        this.sizes.set(2, zSize);
+    }
+    else {
+        this.sizes = null;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nooocl.index.scope" id="apidoc.element.nooocl.index.scope">
+        function <span class="apidocSignatureSpan">nooocl.index.</span>scope
+        <span class="apidocSignatureSpan">(body)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function scope(body) {
+    assert(_.isFunction(body), 'Body should be a function.');
+    begin();
+    try {
+        const result = body(scope);
+        if (result) {
+            if (_.isFunction(result.then)) {
+                return result
+                    .then(function (asyncResult) {
+                        escape(asyncResult, true);
+                        return Promise.try(end).then(() =&gt; asyncResult);
+                    },
+                    function (asyncError) {
+                        return Promise.try(end)
+                        .then(() =&gt; {
+                            throw asyncError;
+                        });
+                    });
+            }
+            escape(result, true);
+        }
+        const endSyncResult = end();
+        verifyEndSyncResult(endSyncResult);
+        return result;
+    }
+    catch (err) {
+        end();
+        throw err;
+    }
+
+    function verifyEndSyncResult(endSyncResult) {
+        if (endSyncResult) {
+            if (_.isFunction(endSyncResult.then)) {
+                throw new Error('disposeFunction should be synchronous in a synchronous scope.');
+            }
+            throw new Error('disposeFunction should not return anything in a synchronous scope.');
+        }
+    }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
